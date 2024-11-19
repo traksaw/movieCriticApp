@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<h1>Mini-Movie Critic</h1>
+    <h2>Review your most recent movie selections</h2>
+    <h3>My Movies</h3>
+
+    <h2>Add a movie</h2>
+    <form action="/movies" method="post">
+        <!-- going to save this as a genre selector for my form -->
+        <label for="genres">Choose a genre:</label>
+
+        <select name="genres" id="genreSelect" required>
+            <option value="">--Please choose an option--</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="horror">Horror</option>
+            <option value="mystery">Mystery</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="thriller">Thriller</option>
+            <option value="western">Western</option>
+            <option value="animation">Animation</option>
+            <option value="musical">Musical</option>
+            <option value="documentary">Documentary</option>
+        </select>
+		
+
+        <label for="movieInput">Movie Name:</label>
+        <input type="text" placeholder="Enter movie title..." name="title">
+		<button type="submit">Submit</button>
+
+    </form>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
