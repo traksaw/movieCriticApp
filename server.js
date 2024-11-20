@@ -1,4 +1,4 @@
-console.log('Server is on')
+// console.log('Server is on')
 const express = require('express') //requires express
 const app = express() //app will be holding express function
 const bodyParser = require('body-parser')
@@ -41,6 +41,7 @@ MongoClient.connect(connectionString).then(client => {
   })
 
   app.post('/movies', (req, res) => {
+    // console.log(req)
     movieTitles
       .insertOne({ title: req.body.title, genres: req.body.genres, count: 0 })
       .then(result => {
