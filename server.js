@@ -6,7 +6,14 @@ const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 const connectionString = 'mongodb+srv://demo:Hello@cluster0.7xnsi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
-app.listen(5555, function () {
+const port = process.env.PORT || 3000;
+
+// // Listen on `port` and 0.0.0.0
+// app.listen(port, "0.0.0.0", function () {
+//   // ...
+// });
+
+app.listen(port, "0.0.0.0", function () {
   console.log('listening on 5555')
 }) // allows us to listen for the port
 
