@@ -9,10 +9,8 @@ Mini-Movie Critic is a full-stack web application designed for movie enthusiasts
 - [Skills Applied and Learned](#skills-applied-and-learned)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 
 ---
 
@@ -37,7 +35,7 @@ This project allowed me to utilize and refine various development skills:
 - **RESTful API**: Implemented `GET`, `POST`, `PUT`, and `DELETE` routes for CRUD operations.
 
 ### Frontend Development
-- **Dynamic User Interface**: Created an interactive UI using **EJS**, **HTML5**, and **CSS**.
+- **Dynamic User Interface**: Created an interactive UI using **EJS**, **HTML5**, **CSS**, and **Bootstrap**.
 - **Client-Side JavaScript**: Utilized `fetch` API for asynchronous data handling and DOM manipulation.
 - **Responsive Design**: Designed with **Font Awesome** and responsive elements to enhance usability.
 
@@ -55,7 +53,7 @@ This project allowed me to utilize and refine various development skills:
 ## Technologies Used
 
 - **Backend**: Node.js, Express.js, MongoDB
-- **Frontend**: EJS, CSS, Font Awesome
+- **Frontend**: EJS, CSS, Bootstrap, Font Awesome
 - **Database**: MongoDB Atlas
 - **Utilities**: Body-Parser
 
@@ -74,7 +72,3 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/mini-movie-critic.git
    cd mini-movie-critic
-
-### Usage
-1. run node server.js
-2. Navigate to localhost:5555

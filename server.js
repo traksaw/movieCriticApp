@@ -4,7 +4,7 @@ const app = express() //app will be holding express function
 const bodyParser = require('body-parser')
 
 const MongoClient = require('mongodb').MongoClient
-const connectionString = 'mongodb+srv://waskarpaulino:Hello@cluster0.wabar.mongodb.net/movies?retryWrites=true&w=majority&appName=Cluster0'
+const connectionString = 'mongodb+srv://demo:Hello@cluster0.7xnsi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 app.listen(5555, function () {
   console.log('listening on 5555')
@@ -104,6 +104,7 @@ MongoClient.connect(connectionString).then(client => {
 
   app.delete('/movies', (req, res) => {
     movieTitles.findOneAndDelete({ title: req.body.title, genres: req.body.genres }, (err, result) => {
+      console.log(req)
       if (err) return res.send(500, err)
       res.send('Message deleted!')
     }).catch(error => console.error(error))
