@@ -4,6 +4,11 @@ Mini-Movie Critic is a full-stack web application designed for movie enthusiasts
 
 ---
 
+<img width="1361" alt="Screenshot 2024-11-22 at 9 09 11 PM" src="https://github.com/user-attachments/assets/18b91358-9669-430d-85b8-6bd7f6658236">
+
+
+---
+
 ## Table of Contents
 - [Features](#features)
 - [Skills Applied and Learned](#skills-applied-and-learned)
