@@ -8,13 +8,9 @@ const connectionString = 'mongodb+srv://demo:Hello@cluster0.7xnsi.mongodb.net/?r
 
 const port = process.env.PORT || 3000;
 
-// // Listen on `port` and 0.0.0.0
-// app.listen(port, "0.0.0.0", function () {
-//   // ...
-// });
 
 app.listen(port, "0.0.0.0", function () {
-  console.log('listening on 5555')
+  console.log(`listening on ${port}`)
 }) // allows us to listen for the port
 
 app.set('view engine', 'ejs')
@@ -31,7 +27,8 @@ MongoClient.connect(connectionString).then(client => {
 
   app.get('/', (req, res) => {
     movieTitles.find().sort({ count: -1 }).toArray().then(results => {
-      // console.log('get request works')
+      console.log('get request works')
+      
       res.render('index.ejs', { movies: results })
 
     }).catch(error => console.error(error))
