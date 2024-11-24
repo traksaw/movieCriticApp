@@ -9,6 +9,12 @@ Mini-Movie Critic is a full-stack web application designed for movie enthusiasts
 
 ---
 
+Check it out here:
+
+https://moviecriticapp.up.railway.app/
+
+---
+
 ## Table of Contents
 - [Features](#features)
 - [Skills Applied and Learned](#skills-applied-and-learned)
